@@ -1,6 +1,7 @@
 import React from 'react';
 
-const StudentList = ({student,no}) => {
+const StudentList = ({student,no,deleteHandler,UpdateHandler }) => {
+   
     return (
         
              <tr>
@@ -9,6 +10,16 @@ const StudentList = ({student,no}) => {
                  <td> {student.batch} </td>
                  <td> {student.roll} </td>
                  <td> {student.class} </td>
+                 <td>
+                     <button onClick={ () => deleteHandler(no)}>
+                         Delete
+                    </button>
+                 </td>
+                 <td>
+                     <button onClick={ (student) => UpdateHandler()}>
+                         Update item
+                    </button>
+                 </td>
              </tr>
     
     );
