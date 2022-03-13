@@ -7,7 +7,7 @@ const StudentList = ({student,no}) => {
                  <td>{no}</td>
                  <td> {student.name} </td>
                  <td> {student.batch} </td>
-                 <td> {student.roll_no} </td>
+                 <td> {student.roll} </td>
                  <td> {student.class} </td>
              </tr>
     
